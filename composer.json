@@ -1,0 +1,12 @@
+{
+    "name": "peterombao/laravel-components",
+    "description": "Components for laravel CMS",
+    "authors": [
+        {
+            "name": "peter.ombao",
+            "email": "peter.ombao@republisys.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
