@@ -14,6 +14,8 @@ class LaravelComponentsServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadViewsFrom(__DIR__ . '/../resources/views/form', 'form');
+
+        $this->loadViewsFrom(__DIR__ . '/../resources/views/table', 'table');
     }
 
     /**
