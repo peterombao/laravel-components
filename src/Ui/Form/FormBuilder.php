@@ -31,4 +31,8 @@ class FormBuilder {
         return $this;
     }
 
+    public function build(){
+        return view('form::form');
+    }
+
 } 
