@@ -2,10 +2,13 @@
 
 namespace Peterombao\LaravelComponents;
 
+use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Support\ServiceProvider;
+use Peterombao\LaravelComponents\Ui\Theme\Command\LoadCurrentTheme;
 
 class LaravelComponentsServiceProvider extends ServiceProvider
 {
+    use DispatchesJobs;
     /**
      * Bootstrap the application services.
      *
@@ -16,6 +19,8 @@ class LaravelComponentsServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/../resources/views/form', 'form');
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views/table', 'table');
+
+        $this->dispatch(new LoadCurrentTheme());
     }
 
     /**
