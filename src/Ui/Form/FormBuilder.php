@@ -5,7 +5,7 @@ class FormBuilder {
 
     protected $sections;
 
-    protected $fields;
+    protected $fields = [];
 
     public function setFields($fields)
     {
