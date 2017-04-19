@@ -20,7 +20,7 @@ class LaravelComponentsServiceProvider extends ServiceProvider
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views/table', 'table');
 
-        $this->dispatch(new LoadCurrentTheme());
+        //$this->dispatch(new LoadCurrentTheme());
     }
 
     /**

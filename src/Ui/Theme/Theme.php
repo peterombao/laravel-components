@@ -7,6 +7,8 @@ class Theme {
 
     protected $current = false;
 
+    protected $path = null;
+
     public function isCurrent(){
         return $this->current;
     }
@@ -15,6 +17,15 @@ class Theme {
         $this->current = $current;
 
         return $this;
+    }
+
+    public function isAdmin(){
+        return $this->admin;
+    }
+
+    public function getPath($path = null){
+        return __DIR__ . '/../../../' . $path;
+        //return base_path($path);
     }
 
 } 
